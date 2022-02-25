@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00C968"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:padding="30dp">
+
+    <ImageView
+        android:id="@+id/ilustracao"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/illustration"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"/>
+
+    <TextView
+        android:id="@+id/txt_usuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Usuário"
+        android:textColor="#11894F"
+        android:textSize="18sp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@id/ilustracao"/>
+
+    <EditText
+        android:id="@+id/edt_usuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Digite seu usuario"
+        android:textColorHint="#C5C5C5"
+        android:background="#fff"
+        android:padding="5dp"
+        android:layout_below="@id/txt_usuario"/>
+
+    <TextView
+        android:id="@+id/txt_senha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Senha"
+        android:textColor="#11894F"
+        android:textSize="18sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@id/edt_usuario"/>
+
+    <EditText
+        android:id="@+id/edt_senha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Digite sua senha"
+        android:textColorHint="#C5C5C5"
+        android:background="#fff"
+        android:padding="5dp"
+        android:layout_below="@id/txt_senha"/>
+
+    <Button
+        android:id="@+id/btn_entrar"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edt_senha"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#11894F"
+        android:text="Entrar"
+        android:textSize="16sp"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cadastre-se"
+        android:layout_below="@id/btn_entrar"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"/>
+
+
+</RelativeLayout>
